@@ -78,7 +78,7 @@ func ExampleSemaphore() {
 			defer sem.Release()
 			time.Sleep(2 * time.Second)
 
-			return // 在信号量保护下执行某些操作
+			// return // 在信号量保护下执行某些操作
 		}()
 	}
 
